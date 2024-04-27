@@ -36,6 +36,14 @@ Select Multidae from the menu listed as shown above. You will get the page as di
 
 Click on the menu Login/Register and register for an account
 
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/7b6f5ebe-75b8-4237-b213-ff2726da6054)
+
+Click on the link “Please register here”
+
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/c57558b6-27b6-417a-afee-06192d88fdf3)
+
+Click on “Create Account” to display the following page:
+
 
 ## RESULT:
 The SQL Injection vulnerability is successfully exploited using the Multidae web application in Metasploitable2.
