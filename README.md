@@ -55,11 +55,11 @@ The login structure we will use in our examples is straightforward. It contains 
 Click “Login”. The logged in page will show as below:
 
 
-##Bypassing login field
+## Bypassing login field
 
-The username field is vulnerable. Put (ganesh’ #) or (ganesh’--) in the username field and hit “Enter” to log in. We use “#” or “--” to comment everything in the query sentence that comes after the username filed telling the database to disregard the password field: (SELECT * FROM users WHERE username=’admin’ # AND password=’ ‘). By using line commenting, the aggressor eliminates a part of the login condition and gains access. This technique will make the “WHERE” clause true only for one user; in this case, it is “ganesh.”
+<p>The username field is vulnerable. Put (ganesh’ #) or (ganesh’--) in the username field and hit “Enter” to log in. We use “#” or “--” to comment everything in the query sentence that comes after the username filed telling the database to disregard the password field: (SELECT * FROM users WHERE username=’admin’ # AND password=’ ‘). By using line commenting, the aggressor eliminates a part of the login condition and gains access. This technique will make the “WHERE” clause true only for one user; in this case, it is “ganesh.”
 =================================================================
-If you face error in registration follow the following steps in metasploitable 2:
+If you face error in registration follow the following steps in metasploitable 2:</p>
 
 
 
@@ -85,7 +85,7 @@ To restart Apache, type the following command in the terminal. Alternatively, yo
 sudo /etc/init.d/apache2 reload
 
 
- Reset Mutillidae database
+Reset Mutillidae database
 Refresh the page then clicking on the Reset DB menu option to reset the Mutillidae database [Figure ]. Click OK when prompted.
 
 
