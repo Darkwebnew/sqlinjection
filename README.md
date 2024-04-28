@@ -103,7 +103,7 @@ Refresh the page then clicking on the Reset DB menu option to reset the Mutillid
 Test the new configuration
 Alright. Now is time to test if we managed to fix the database issue. Go ahead and register a new account on the Mutillidae webpage.
 
- The Mutillidae database error no longer appears 
+The Mutillidae database error no longer appears 
 
 ![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/0197810b-b7e6-483c-9d7b-f0d9c06a6f10)
 
@@ -111,7 +111,7 @@ Alright. Now is time to test if we managed to fix the database issue. Go ahead a
 
 Now after logging out you will see the login page. In the login page give ganesh’ # . You can see the page now enters into the administrator page as before when giving the password. 
 
-![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/96b5bf74-c6af-409b-9836-831039ec784d)
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/6b102dbe-3475-4d8d-8a3d-1531e14f955d)
 
 Click the login button and you will see it enter into the administrator page.
 
@@ -132,7 +132,7 @@ After logging out, Now choose the menu as shown below:
 
 From this point, all our attack vectors will be performed in the URL section of the page using the Union-Based technique.There are two different ways to discover how many columns are selected by the original query. The first is to infuse an “ORDER BY” statement indicating a column number. Given the column number specified is higher than the number of columns in the “SELECT” statement, an error will be returned.
 
-![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/101e8782-9dca-4fe0-a54e-6124d0fb32c1)
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/0ad6bb5a-448d-4f47-8e1d-de95b38277e9)
 
 Since we do not know the number of columns, we start at 1. To find the exact amount of columns, the number is incremented until an error related to the “ORDER BY” clause is returned. In this example, we incremented it to 6 and received an error message, so it means that the number of columns is lower than 6.
 
@@ -148,7 +148,7 @@ http://192.168.43.83/mutillidae/index.php?page=user-info.php&username=Harish%27o
 
 After adding the order by 6 into the existing url , the following error statement will be obtained:
 
-![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/a207fe34-c077-4b8e-b9f5-8d74e1c7c540)
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/57fa448c-a7e8-4395-88ee-a53c80a86fbf)
 
 When we ordered by 5, it worked and displayed some information. It means there are five columns that we can work with. Following screenshot shows that the url modified to have statement added with ordered by 5 replacing 6.
 
