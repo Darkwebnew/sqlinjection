@@ -1,4 +1,4 @@
-# EX-7.Sqlinjection
+# EX-8.Sqlinjection
 ## Date:
 Exploiting SQL Injection vulnerability
 
