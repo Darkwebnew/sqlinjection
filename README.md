@@ -112,7 +112,7 @@ The Mutillidae database error no longer appears
 
 Now after logging out you will see the login page. In the login page give ganesh’ # . You can see the page now enters into the administrator page as before when giving the password. 
 
-![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/6b102dbe-3475-4d8d-8a3d-1531e14f955d)
+![image](https://github.com/Darkwebnew/sqlinjection/assets/143114486/172e8311-71e7-4573-a45c-8f7721970dd1)
 
 Click the login button and you will see it enter into the administrator page.
 
